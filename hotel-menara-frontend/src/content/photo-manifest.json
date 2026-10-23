@@ -1,0 +1,4 @@
+{
+  "note": "Written by `npm run photos:download`. Lists the official photos copied into public/photos/ so the site serves them locally.",
+  "local": []
+}

@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# logs and coverage
+logs/
+*.log
+npm-debug.log*
+coverage/
+.nyc_output/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/

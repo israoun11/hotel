@@ -1,0 +1,76 @@
+/* Design tokens: Hôtel Menara Hammamet.
+   Ivory and cream grounds, deep Mediterranean petrol, sand and stone, charcoal text, brushed gold used sparingly. */
+/* Self-hosted typefaces (SIL Open Font License, see public/fonts/*-OFL.txt), subset to Latin for French and English. */
+@font-face {
+  font-family: "Libre Caslon Display";
+  src: url("/fonts/libre-caslon-display-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/jost-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/jost-400.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/fonts/jost-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ivory: #f8f4ec;
+  --cream: #efe7d8;
+  --sand: #d8c8ac;
+  --stone: #b9a88b;
+  --petrol: #163c3b;
+  --petrol-deep: #0f2b2a;
+  --petrol-soft: #2c5654;
+  --charcoal: #2b2926;
+  --muted: #655a4c;
+  --gold: #a68a5b;
+  --gold-soft: rgba(166, 138, 91, 0.55);
+  --white: #ffffff;
+  --line: rgba(43, 41, 38, 0.14);
+  --line-strong: rgba(43, 41, 38, 0.28);
+  --line-light: rgba(255, 255, 255, 0.28);
+  --danger: #9b3b2f;
+  --success: #3d6b4b;
+  --warning: #8a6420;
+
+  --font-display: "Libre Caslon Display", "Didot", "Bodoni 72", Georgia, "Times New Roman", serif;
+  --font-sans: "Jost", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+
+  --step--1: 0.8125rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --display-4: 1.375rem;
+  --display-3: clamp(1.625rem, 1.2rem + 1.4vw, 2.125rem);
+  --display-2: clamp(2rem, 1.3rem + 2.6vw, 3.25rem);
+  --display-1: clamp(2.625rem, 1.4rem + 4.6vw, 5rem);
+
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --max: 1320px;
+  /* Width of the content box of a full-width section: --max minus its side gutters. */
+  --content: calc(var(--max) - 2 * var(--gutter));
+  --measure: 34rem;
+  --section: clamp(4.5rem, 3rem + 7vw, 9.5rem);
+  --radius: 2px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --shadow-soft: 0 18px 40px -28px rgba(15, 43, 42, 0.45);
+}
